@@ -7,14 +7,14 @@ How to install?
 You must have nodejs install to run this 
 
 ```
-  git clone https://github.com/xxxxx/yyyyy.git
+  git clone https://github.com/prikin26/CustomerMGMT.git
 ```
 or you can download and extract the zip file. 
 
 
 Go to the directory
 ```
-  cd xxxxx
+  cd CustomerMGMT
 ```  
 
 Install npm packages 
