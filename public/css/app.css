@@ -1,0 +1,36 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty{
+    border-color:#FA787E;
+}
+.ng-valid.ng-dirty{
+    border-color:#78FA89;
+}
+.clear{
+    clear:both;
+}
+footer{
+	margin-top: 50px;
+	color:#fff;
+	text-align: center;
+	padding: 10px;
+}
+body{
+	padding-top: 70px;
+}
+.custTitle{
+	font-size: 20px;
+}
+
+.displayItem{
+	padding:10px 50px;
+	max-width: 500px;
+}
+label.form-group{
+	display: block;
+	max-width:none;
+}
+h1{
+	margin-left: -15px;
+}

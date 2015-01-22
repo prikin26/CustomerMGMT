@@ -1,0 +1,18 @@
+<section ng-controller="customerController" ng-init="findOne()">
+
+	<div class="pull-right">
+		<a class="btn btn-primary" href="#/customers/{{customer.id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+	</div>
+	<div class="page-header">
+		<h1>Customer Details</h1>
+	</div>
+	<ul class="list-group clearfix">
+		<li class="list-group-item">Name: <label>{{customer.name}}</label></li>
+		<li class="list-group-item">Email: <label>{{customer.email}}</label></li>
+		<li class="list-group-item">Telephone: <label>{{customer.telephone}}</label></li>
+		<li class="list-group-item">Address: <label>{{customer.address.street}}, {{customer.address.city}} {{customer.address.state}} {{customer.address.zip}}</label></li>
+	</ul>
+
+</section>

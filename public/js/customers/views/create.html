@@ -1,0 +1,40 @@
+<section ng-controller="customerController" ng-init="findOne()" class="displayItem">
+
+	<h1>{{action}} Customer</h1>
+	<form class="form-horizontal" ng-submit="save()">
+		<fieldset>
+			<div ng-if="errors" class="text-danger">
+				<ul>
+					<li ng-repeat="err in errors">{{err}}</li>
+				</ul>
+			</div>
+			 <label class="form-group">Name
+				<div class="controls">
+					<input ng-model="customer.name" class="form-control" placeholder="Name" type="text">
+				</div>
+			 </label>
+			 <label class="form-group">Email
+				<div class="controls">
+					<input ng-model="customer.email" class="form-control" placeholder="Email" type="email">
+				</div>
+			 </label>
+			 <label class="form-group">Telephone
+			 	<div class="controls">
+					<input ng-model="customer.telephone" class="form-control" placeholder="Telephone" type="text">
+			 	</div>
+			 </label>
+			<div class="form-group">
+				<label>Address</label>
+				<div class="controls">
+					<input ng-model="customer.address.street" class="form-control" placeholder="Street" type="text">
+					<input ng-model="customer.address.city" class="form-control" placeholder="City" type="text">
+					<input ng-model="customer.address.state" class="form-control" placeholder="State" type="text">
+					<input ng-model="customer.address.zip" class="form-control" placeholder="Zip Code" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default">
+            </div>
+		</fieldset>
+	</form>
+<section>

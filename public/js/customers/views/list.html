@@ -1,0 +1,27 @@
+ <div class="clearfix" ng-controller="customerController" ng-init="list()">
+    <div class ="col-sm-12"  ng-controller="customerController">
+       <div ng-if="customers.length" class="well">
+          <input type="text" class="form-control" placeholder="Search customer by name"  ng-model="search.name">
+      </div>
+
+
+
+	    <div class="list-group">
+	        <a ng-repeat="cust in customers | filter:search" ng-href="#/customers/{{cust.id}}" class="list-group-item">
+				<h4 class="list-group-item-heading">{{cust.name}} 
+	              <span class="glyphicon glyphicon-remove-sign pull-right" ng-click="removeMe(cust,$index,$event)"></span></h4>
+	            <small class="list-group-item-text">
+	                Email:
+	                <b>{{cust.email}}</b>,
+	                Location:
+	                <b>{{cust.address.city}}, {{cust.address.state}}</b>
+	             </small>
+	        </a>
+	    </div>
+      
+      <h3 style="padding:100px 0;" ng-if="!customers.length">
+      		 You dont have customer please <a href="#/customers/create" >create one </a>
+      </h3>
+
+    </div>
+</div>
